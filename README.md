@@ -4,15 +4,14 @@ This is my repository with all the sources related to **programming in c and c +
 <br>
 The compiling and execution procedure of the various sources changes according to the operating system in use
 <br>
-###If use Windows:
+##If use Windows:
 - clone repository with git-bash 
 ```bash
 $ git clone "https://github.com/vscalcione/cpp_projects
 $ cd cpp_projects
 ```
 - compile and execute only single source-code with your preferite IDE. In this case I use **Clion** but you can use only c/c++ IDE
-## 
-###If use Linux or Unix-like OS:
+##If use Linux or Unix-like OS:
 The IDE issue is the same as that for Windows but you can also compile and execute everything from the command line
 - If you choose IDE's way, you can install any IDE for C/c++. For example, I used Jetbrains's Clion
 - If you choose command line way, type these commands on terminal
