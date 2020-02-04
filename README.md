@@ -1,25 +1,26 @@
-## C++ projects
+# C++ projects
 
-This is my repository with all the sources related to **programming in c and c ++**
-<br>
-The compiling and execution procedure of the various sources changes according to the operating system in use
-<br>
-<strong>If use Windows:</strong>
-- clone repository with git-bash 
+This is my repository with all sources code related to ***programming in C/C++***. The compiling and execution procedure of all sources code changes in according to the operating system in use
+
+### If you use Windows
+- clone the repository with git-bash and execute this command for cloning the repos.
 ```bash
-$ git clone "https://github.com/vscalcione/cpp_projects
+$ git clone "https://github.com/vscalcione/cpp_projects"
 $ cd cpp_projects
 ```
-- compile and execute only single source-code with your preferite IDE. In this case I use **Clion** but you can use only c/c++ IDE 
-<br>
-<strong>If use Linux or Unix-like OS:</strong>
-The IDE issue is the same as that for Windows but you can also compile and execute everything from the command line
-- If you choose IDE's way, you can install any IDE for C/c++. For example, I used Jetbrains's Clion
-- If you choose command line way, type these commands on terminal
-- In any case remember to comment the lines of code in which you find ***system("cls")*** and to uncomment those in which you find ***system ("clear")***
+- compile and execute only single source with your preferite IDE. In this case I use ***Clion (Jetbrains)*** but you can use only C/C++ IDE
+
+### If you use Linux OS:
+- The IDE issue is the same as that for Windows but you can also compile and execute everything form the command line
+- If you choose IDE's way, you can install any C/C++ IDE. For example, I used ***Clion (Jetbrains)***
+- If you choose command line way, type theese commands on terminal
 ```bash
 $ git clone "https://github.com/vscalcione/cpp_projects
 $ cd cpp_projects
 $ g++ ${fileName}.cpp -o /output/${fileName}
 $ cd output && ./${fileName}
 ```
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
