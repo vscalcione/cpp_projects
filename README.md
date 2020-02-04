@@ -10,7 +10,8 @@ The compiling and execution procedure of the various sources changes according t
 $ git clone "https://github.com/vscalcione/cpp_projects
 $ cd cpp_projects
 ```
-- compile and execute only single source-code with your preferite IDE. In this case I use **Clion** but you can use only c/c++ IDE <br>
+- compile and execute only single source-code with your preferite IDE. In this case I use **Clion** but you can use only c/c++ IDE 
+<br>
 <strong>If use Linux or Unix-like OS:</strong>
 The IDE issue is the same as that for Windows but you can also compile and execute everything from the command line
 - If you choose IDE's way, you can install any IDE for C/c++. For example, I used Jetbrains's Clion
