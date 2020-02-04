@@ -148,7 +148,7 @@ void posizionamento1x4() {
         cout << "inserisci la column: ";
         cin >> column;
     } while (column < 0 || column > 7);
-    cout << "verso dove vuoi il resto della nave? [a=alto;d=destra;b=basso;s=sinistra]";
+    cout << "verso dove vuoi il rest della nave? [a=alto;d=destra;b=basso;s=sinistra]";
     cin >> direction;
     switch (direction) {
         case 'a':
@@ -212,7 +212,7 @@ void posizionamento1x2() {
         cout << "inserisci la column: ";
         cin >> column;
     } while (rows < 0 || rows > 7);
-    cout << "verso dove vuoi il resto della nave? [a=alto;d=destra;b=basso;s=sinistra]";
+    cout << "verso dove vuoi il rest della nave? [a=alto;d=destra;b=basso;s=sinistra]";
     cin >> direction;
     switch (direction) {
         case 'a':

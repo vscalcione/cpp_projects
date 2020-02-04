@@ -1,17 +1,19 @@
 #include <iostream>
 #include <cstdlib>
 #include <math.h>
+
 using namespace std;
-int value;
-void Calcolo_pariDispari (int numero);
-int response;
-main(){
+
+int value, response;
+void pair_dispair_calculate (int value);
+
+int main(){
 	system("color 1F");
 	do{
 		system("cls");
-		cout<<"Inserire value: ";
+		cout<<"Insert value: ";
 		cin >> value;
-		Calcolo_pariDispari(value);
+        pair_dispair_calculate(value);
 		cout<<"L'utente vuole eseguire un'altra operazione? 1=si, 0=no ";
 		cin >> response;
 		if(response == 0 or response != 1){
@@ -20,11 +22,11 @@ main(){
 	}
 	while(response == 1);
 }
-void Calcolo_pariDispari(int numero){
-	if(numero%2==0){
-		cout<<"Il value "<<numero<<" e' pari "<<endl;
+void pair_dispair_calculate(int value){
+	if(value % 2 == 0){
+		cout << "Inserted value  " << value << " is pair " << endl;
 	}
 	else{
-		cout<<"Il value "<<numero<<" e' dispari "<<endl;
+		cout << "Inserted value " << value << " is dispair " << endl;
 	}
 }
