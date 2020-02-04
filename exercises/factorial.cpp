@@ -2,16 +2,16 @@
 #include <cstdlib>
 #include <math.h>
 using namespace std;
-int fatt,numero;
+int fatt,value;
 int fattoriale (int numero);
 main()
 {
 	system ("color 1F");
-	cout<<"Fattoriale di un numero "<<endl;
-	cout<<"Inserire numero del quale si vuole calcolare il fattoriale: ";
-	cin>>numero;
-	fatt=fattoriale (numero);
-	cout<<"Fattoriale di "<<numero<<": "<<fatt<<endl;
+	cout<<"Fattoriale di un value "<<endl;
+	cout<<"Inserire value del quale si vuole calcolare il fattoriale: ";
+	cin >> value;
+	fatt=fattoriale (value);
+	cout << "Fattoriale di " << value << ": " << fatt << endl;
 }
 int fattoriale (int numero)
 {

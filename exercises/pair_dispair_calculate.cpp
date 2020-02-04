@@ -2,29 +2,29 @@
 #include <cstdlib>
 #include <math.h>
 using namespace std;
-int numero;
+int value;
 void Calcolo_pariDispari (int numero);
-int risposta;
+int response;
 main(){
 	system("color 1F");
 	do{
 		system("cls");
-		cout<<"Inserire numero: ";
-		cin>>numero;
-		Calcolo_pariDispari(numero);
+		cout<<"Inserire value: ";
+		cin >> value;
+		Calcolo_pariDispari(value);
 		cout<<"L'utente vuole eseguire un'altra operazione? 1=si, 0=no ";
-		cin>>risposta;
-		if(risposta==0 or risposta!=1){
+		cin >> response;
+		if(response == 0 or response != 1){
 			break;
 		}
 	}
-	while(risposta==1);
+	while(response == 1);
 }
 void Calcolo_pariDispari(int numero){
 	if(numero%2==0){
-		cout<<"Il numero "<<numero<<" e' pari "<<endl;
+		cout<<"Il value "<<numero<<" e' pari "<<endl;
 	}
 	else{
-		cout<<"Il numero "<<numero<<" e' dispari "<<endl;
+		cout<<"Il value "<<numero<<" e' dispari "<<endl;
 	}
 }

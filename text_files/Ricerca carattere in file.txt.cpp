@@ -1,6 +1,6 @@
 /* Si realizzi il codice.cpp in cui, dopo aver creato un file di testo ("file.txt"), al cui interno troviamo n caratteri ("a"), si inserisca un nuovo carattere da 
-tastiera e si verifichi se tale carattere è contenuto all'interno del file di testo. In caso affermativo si stampi il messaggio: "TROVATO" e si calcoli la propria 
-occorrenza, ovvero il numero di volte che tale carattere è presente nel file stesso
+tastiera e si verifichi se tale carattere ? contenuto all'interno del file di testo. In caso affermativo si stampi il messaggio: "TROVATO" e si calcoli la propria 
+occorrenza, ovvero il numero di volte che tale carattere ? presente nel file stesso
 */
 #include <iostream> //libreria che permette l'utilizzo dei comandi "cin" e "cout"
 #include <fstream> //libreria che permette l'utilizzo dei comandi che sfruttano la gestione dei file
@@ -30,7 +30,7 @@ main()
 		if (carattereUtente==carattere)
 		{
 			cout<<"TROVATO "; //nel caso in cui nella variabile "carattereUtente" sia contenuto un determinato carattere e tale sia uguale a quello inserito nel file.txt
-							 //verrà stampato un messaggio di conferma e la posizione del carattere trovato
+							 //verr? stampato un messaggio di conferma e la posizione del carattere trovato
 			a=i;
 			cout<<"nella posizione "<<a<<endl;
 			cont++;

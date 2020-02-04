@@ -5,7 +5,7 @@
 #include <string.h>
 using namespace std;
 int n1,n2,a,b,x,y;
-char start[2],go[]="go",scelta[2], si[]="si",no[]="no";
+char start[2],go[]="go",choice[2], yes[]="si",no[]="no";
 int primo_dado (int x);
 int secondo_dado (int y);
 main()
@@ -16,7 +16,7 @@ main()
 	{
 		do
 		{
-			cout<<"Digitare GO per tirare i dadi "<<endl;
+			cout<<"Digitare GO per tirare first_index dadi "<<endl;
 			cin>>start;
 		}
 		while (strcmp(go,start)!=0);
@@ -24,13 +24,13 @@ main()
 		b=secondo_dado (y);
 		cout<<"Il risultato del tuo lancio \212: "<<a+b<<endl;
 		cout<<"Vuoi fare un'altro tiro?: ";
-		cin>>scelta;
-		if (strcmp(scelta,no)==0)
+		cin >> choice;
+		if (strcmp(choice, no) == 0)
 		{
 			break;
 		}
 	}
-	while (strcmp(scelta,si)==0);
+	while (strcmp(choice, yes) == 0);
 }
 int primo_dado (int x)
 {

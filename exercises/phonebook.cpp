@@ -9,7 +9,7 @@ struct rubrica{
     char numero_contatto[11];
     char email_contatto[50];
 }vettore[100];
-char s1[10],aggiungi[10]="aggiungi",cerca[10]="cerca",s2[10],numero[10]="numero",visualizza[11]="visualizza",esci[6]="esci";
+char s1[10],aggiungi[10]="aggiungi",cerca[10]="cerca",s2[10],value[10]="value",visualizza[11]="visualizza",esci[6]="esci";
 char nome[10];
 void caricamento(struct rubrica vettore[], int o);
 void visualizza_rubrica(struct rubrica vettore[], int o);

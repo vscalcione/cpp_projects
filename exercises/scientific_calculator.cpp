@@ -7,11 +7,12 @@ using namespace std;
 int choice, response;
 double first_value, second_value, result, value, base, exponent;
 
+void print_menu();
 double sum (double first_value, double second_value);
 double difference(double first_value, double second_value);
 double product(double first_value, double second_value);
 double quozient(double first_value, double second_value);
-double factorial(double first_value, double second_value);
+double factorial(double value);
 double pow(double base, double exponent);
 double square(double value);
 double cube(double value);
@@ -155,7 +156,7 @@ double quozient(double first_value, double second_value){
 double factorial(double value){
 	double result;
 	if(value == 0){
-		retrun 1;
+		return 1;
 	}
 	else{
 		result = value * factorial(value - 1);
