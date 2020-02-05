@@ -15,7 +15,7 @@ int main(){
 		cout<<"Insert month value: ";
 		cin >> value;
 		print_month(value);
-		cout<<"L'utente vuole eseguire un'altra operazione? 1=si, 0=no ";
+		cout<<"The user wuold do another operation? 1 = yes, 0 = no";
 		cin >> response;
 		if(response == 0 or response != 1){
 			break;

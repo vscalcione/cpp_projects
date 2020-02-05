@@ -5,7 +5,7 @@
 using namespace std;
 
 int sum (int first_value, int second_value);
-int first_value, second_value ,result;
+int first_value, second_value, result;
 
 int main(){
 	system ("color 1F");
@@ -14,7 +14,7 @@ int main(){
 	cin >> first_value;
 	cout<<"Insert second value: ";
 	cin >> second_value;
-    result = sum (first_value, second_value);
+    	result = sum (first_value, second_value);
 	cout << "Sum: " << result << endl;
 }
 
