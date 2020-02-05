@@ -3,7 +3,9 @@
 #include <math.h>
 #include <time.h>
 #include <string.h>
+
 using namespace std;
+
 char a[7][20]={"albero", "tastiera", "forbici", "batteria", "twd", "mare", "vincenzo",};
 char f[20];
 char rit[3], yes[4]="yes", no[3]="no", ok[3]="ok";
