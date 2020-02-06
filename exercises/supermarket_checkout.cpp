@@ -1,57 +1,64 @@
 #include <iostream>
 #include <cstdlib>
 #include <math.h>
+
 using namespace std;
-float v[10],j[10];
-char nome_prodotto[10][20];
-void set_NomeProdotto(char nome_prodotto[][20]);
-void set_PrezzoProdotto(float v[]);
-void ordinamento(float v[]);
-void stampa (float v[]);
-void sconto_prezzi (float v[]);
-void set_NomePrezzoProdotto (float v[],char nome_prodotto[][20]);
-main(){
+
+float product_price[10], tmp_array[10];
+char product_name[10][20];
+void set_product_name(char product_name[][20]);
+void set_product_price(float product_price[]);
+void sorting(float product_price[]);
+void print(float product_price[]);
+void discount_prices (float product_price[]);
+void set_product_name_price (float product_price[],char product_name[][20]);
+
+int main(){
 	system("color 3F");
-	cout<<"SIMULATORE FUNZIONAMENTO CASSA SUPERMERCATO "<<endl<<endl;
-	set_NomePrezzoProdotto(v,nome_prodotto);
+	cout<<"Supermarket checkout simulator "<<endl<<endl;
+	set_product_name_price(product_price, product_name);
 	system("cls");
-	ordinamento(v);
-	stampa(v);
-	sconto_prezzi(v);
+	sorting(product_price);
+	print(product_price);
+	discount_prices(product_price);
+	return 0;
 }
-void set_NomePrezzoProdotto (float v[],char nome_prodotto[][20]){
-	for(int i=0;i<10;i++){
-		cout<<"Nome del "<<i+1<<" prodotto: ";
-		cin>>nome_prodotto[i];
-		cout<<"Prezzo del "<<i+1<<" prodotto: ";
-		cin>>v[i];
-		cout<<"------------------------------------"<<endl;
+
+void set_product_name_price(float product_price[], char product_name[][20]){
+	for(int index = 1; index < 10; index++){
+		cout<<"Product name "<<index<<" : ";
+		cin>>product_name[index];
+		cout<<"Price product "<<index<<" : ";
+		cin>>product_price[index];
+		cout<<"-----------------------------"<<endl;
 	}
 }
-void ordinamento(float v[]){
+
+void sorting(float product_price[]){
 	float temp;
-	for(int i=0;i<9;i++){
-		for(int j=i+1;j<10;j++){
-			if(v[i]>v[j]){
-				temp=v[i];
-				v[i]=v[j];
-				v[j]=temp;
+	for(int index = 0; index < 9; index++){
+		for(int j = index + 1; j < 10; j++){
+			if(product_price[index] > product_price[j]){
+				temp = product_price[index];
+				product_price[index ] = product_price[j];
+				product_price[j] = temp;
 			}
 		}
 	}
 }
-void stampa (float vettore[]){
-	cout<<"prezzi ordinati:"<<endl;
-	for(int i=0;i<10;i++){
-		cout<<i+1<<") "<<v[i]<<"   ";
-	}
-}
-void sconto_prezzi (float vettore[]){
-	cout<<endl;
-    cout<<"Prezzi scontati: "<<endl;
-	for(int i=0;i<10;i++){
-		j[i]=(vettore[i]/100)*20;
-		cout<<"Il prezzo scontato del "<<i+1<<" prodotto e': "<<v[i]-j[i]<<endl;
+
+void print (float product_price[]){
+	cout<<"Discounted prices "<<endl;
+	for(int index = 0; index < 10; index++){
+		cout<<index + 1<<") "<<product_price[index]<<"   ";
 	}
 }
 
+void discount_prices (float product_price[]){
+	cout<<endl;
+    	cout<<"Discounted prices - pt. 2 : "<<endl;
+	for(int index = 0; index < 10; index++){
+		tmp_array[index] = (product_price[index] / 100) * 20;
+		cout<<"Discounted price of "<<index + 1<<" product is: "<<product_price[index]- tmp_array[index]<<endl;
+	}
+}
