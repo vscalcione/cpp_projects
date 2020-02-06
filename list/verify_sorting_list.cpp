@@ -4,7 +4,6 @@
 
 using namespace std;
 
-//definition of all variables
 struct list{
 	int info;
 	list*next;
@@ -12,7 +11,6 @@ struct list{
 list*il = NULL;
 int result = 0, list_length;
 
-//definition of all methods
 void loading_list(list*&il, int list_length);
 void print_list(list*il, int list_length);
 int verify_sorting(list*il, int list_length);
@@ -38,13 +36,9 @@ int main(){
 		cout<<"LIST SORTED "<<endl;
 		print_list(il, list_length);
 	}
+	return 0;
 }
 
-/**
- * Method that allows to insert random values in the list
- * @param il
- * @param list_length
- */
 void loading_list (list*&il, int list_length){
 	for(int index = 0; index < list_length; index++){
 		list*new_item = new list;
@@ -54,11 +48,6 @@ void loading_list (list*&il, int list_length){
 	}
 }
 
-/**
- * Method that allows to print list
- * @param il
- * @param list_length
- */
 void print_list(list*il, int list_length){
 	list*tmp = il;
 	while(tmp != NULL){
@@ -67,12 +56,6 @@ void print_list(list*il, int list_length){
 	}
 }
 
-/**
- * Method that checks whether the list taken as input is ordered or not
- * @param il
- * @param list_length
- * @return
- */
 int verify_sorting(list*il, int list_length){
 	int max = 0;
 	list*tmp = il;
@@ -93,11 +76,6 @@ int verify_sorting(list*il, int list_length){
 	}
 }
 
-/**
- * Method that, in the event that the list taken as input is not ordered, orders the latter
- * @param il
- * @param list_length
- */
 void sorting_list (list*il, int list_length){
 	int a, tmp;
 	list*tmp = il;
@@ -114,4 +92,3 @@ void sorting_list (list*il, int list_length){
 		il = tmp;
 	}
 }
-
