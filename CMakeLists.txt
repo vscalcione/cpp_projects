@@ -6,6 +6,13 @@ set(CMAKE_CXX_STANDARD 11)
 add_executable(
         cpp_project
 
+        #exercises directory
+        exercises/choice_month.cpp
+        exercises/cube.cpp
+        exercises/sum.cpp
+        exercises/fibonacci_sequence.cpp
+        exercises/pow.cpp
+
         #list directory
         list/list_sorting.cpp
         list/add_element_end_list.cpp
