@@ -2,20 +2,26 @@
 #include <cstdlib>
 #include <math.h>
 #include <string.h>
+
 using namespace std;
-struct rubrica{
-    char nome_contatto[20];
-    char cognome_contatto[20];
-    char numero_contatto[11];
-    char email_contatto[50];
-}vettore[100];
+
+struct phonebook{
+    char contact_name[20];
+    char contact_surname[20];
+    char contact_number[11];
+    char contact_email_address[50];
+}array[100];
+
 char s1[10],aggiungi[10]="aggiungi",cerca[10]="cerca",s2[10],value[10]="value",visualizza[11]="visualizza",esci[6]="esci";
 char nome[10];
-void caricamento(struct rubrica vettore[], int o);
-void visualizza_rubrica(struct rubrica vettore[], int o);
-void ricerca_contatto(struct rubrica vettore[], int o, char nome[]);
-int o=0,p;
-main(){
+void loading(struct phonebook array[], int o);
+void show_phonebook(struct phonebook array[], int o);
+void search_contact(struct phonebook array[], int o, char nome[]);
+void print_menu();
+
+int o=0, p;
+
+int main(){
     system("color 1F");
     do{
         system("cls");

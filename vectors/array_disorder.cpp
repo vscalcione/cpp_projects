@@ -1,16 +1,15 @@
-/* Si crei un programma in c++ dove, dopo aver caricato un vettore di n elementi interi, si calcoli il suo corrispettivo vettore disordinato,
-ovvero eseguendo un ordinamento ma al contrario, il tutto attraverso le apposite funzioni. Inoltre, si stampi a video il risultato completo
-*/
-#include <iostream> //libreria che permette l'utilizzo dei comandi "cin" e "cout"
+#include <iostream> 
 #include <cstdlib>
-#include <time.h> //libreria che permette l'utilizzo delle istruzioni generatrici di valori random ("srand" e "rand")
-#include <math.h> //libreria che permette l'utilizzo delle istruzioni che necessitano di calcoli matematici
+#include <time.h>
+#include <math.h>
+
 using namespace std;
-int vettore[100],n,scelta; //dichiarazione del vettore di n elementi e le variabili necessarie
-void caricamento_vettore (int vettore[], int n); //dichiarazione funzione caricamento vettore di n elementi interi inseriti da tastiera
-void caricamento1_vettore (int vettore[], int n); //dichiarazione funzione caricamento vettore di n elementi interi random
-void stampa_vettore (int vettore[], int n); //dichiarazione funzione stampa vettore
-void disordinamento_vettore (int vettore[], int n); //dichiarazione funzione disordinamento vettore
+
+int array[100], length, choice;
+void loading_array (int array[], int length); 
+void loading_array_1 (int array[], int length); 
+void print_array (int array[], int length); 
+void array_disorder (int array[], int length);
 main()
 {
 	system ("color 1F");

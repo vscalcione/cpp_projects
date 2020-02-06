@@ -1,21 +1,21 @@
 #include <iostream>
 #include <cstdlib>
 #include <math.h>
+
 using namespace std;
-int quadrato,numero;
-int quadrato_numero (int numero);
-main()
-{
+
+int value, result;
+int square (int value);
+
+int main(){
 	system ("color 1F");
-	cout<<"Quadrato di un numero "<<endl;
-	cout<<"Inserire valore da elevare al quadrato: ";
-	cin>>numero;
-	quadrato=quadrato_numero (numero);
-	cout<<"Quadrato di "<<numero<<": "<<quadrato<<endl;
+	cout<<"Square "<<endl;
+	cout<<"Insert value: ";
+	cin>>value;
+	result = square(value);
+	cout<<"Square of "<<value<<" is: "<<result<<endl;
 }
-int quadrato_numero (int numero)
-{
-	int x;
-	x=numero*numero;
-	return x;
+
+int square (int value){
+	return value * value;
 }
