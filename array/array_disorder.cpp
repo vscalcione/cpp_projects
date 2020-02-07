@@ -10,12 +10,12 @@ void loading_array (int array[], int length);
 void loading_array_1 (int array[], int length); 
 void print_array (int array[], int length); 
 void array_disorder (int array[], int length);
-main()
-{
+
+int main(){
 	system ("color 1F");
 	cout<<"Caricamento, disordinameto e stampa di un vettore di n elementi "<<endl;
 	cout<<"Quanti elementi vuoi che abbia il tuo vettore? ";
-	cin>>n; //inserimento quantità elementi vettore
+	cin>>n; //inserimento quantitï¿½ elementi vettore
 	do
 	{
 		cout<<"Menu' "<<endl;
@@ -28,7 +28,7 @@ main()
 			cout<<"Operazione non disponibile "<<endl;
 		}
 	}
-	while (scelta<1 or scelta>2); //ciclo do-while che permette di ciclare il menù nel caso in cui si inserisca un valore minore di 1 e 
+	while (scelta<1 or scelta>2); //ciclo do-while che permette di ciclare il menï¿½ nel caso in cui si inserisca un valore minore di 1 e 
 								 //maggiore di 2
 	if (scelta==1)
 	{
@@ -82,8 +82,8 @@ void disordinamento_vettore (int vettore[], int n)
 				int tmp;
 				tmp=vettore[i];
 				vettore[i]=vettore[j+1];
-				vettore[j+1]=tmp; //nel caso in cui la variabile p, nella quale è stato memorizzato un valore divisibile per 2 (con resto 0) 
-								 //è uguale a 1, avviene lo scambio di valori
+				vettore[j+1]=tmp; //nel caso in cui la variabile p, nella quale ï¿½ stato memorizzato un valore divisibile per 2 (con resto 0) 
+								 //ï¿½ uguale a 1, avviene lo scambio di valori
 			}
 		}
 	}
