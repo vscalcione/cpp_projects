@@ -2,6 +2,17 @@
 
 This is my repository with all sources code related to ***programming in C/C++***. The compiling and execution procedure of all sources code changes in according to the operating system in use
 
+![cpp](https://img.icons8.com/color/144/000000/c-plus-plus-logo.png)
+
+## Packaging
+- *Array*
+- *File txt*
+- *List*
+- *Math Functions*
+- *Matrix*
+- *Pointers*
+- *Recursion*
+
 ### If you use Windows
 - clone the repository with git-bash and execute this command for cloning the repos.
 ```bash
